@@ -13,9 +13,9 @@ const publicdir = path.join(__dirname, "../public");
 const viewsdir = path.join(__dirname, '../templates/views');  // custom hbs views directory
 const partialsdir = path.join(__dirname, "../templates/partials");  // partials directory
 
-console.log(__dirname);
-console.log(__filename);
-console.log(publicdir);
+// console.log(__dirname);
+// console.log(__filename);
+// console.log(publicdir);
 
 
 let app = express();
