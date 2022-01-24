@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/cssbs/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    {{!--
+    <link rel="stylesheet" href="/css/font-awesome.min.css"> --}}
+    <script src="/jsbs/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    {{>header}}
+    <section>
+        <div class="container-fluid">
+            <div class="row" style="height: 80vh">
+                <div class="col-lg ms-3">
+                    <p>Use this site to get your weather!</p>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <form>
+                                <div class="input-group">
+                                    <input id="loc_input" class="form-control" type="text" placeholder="Location"></input>
+                                    <button id="sub_btn" type="submit" class="btn btn-outline-secondary"><i
+                                            class="fas fa-search text-muted"></i></button>
+                                </div>
+                            </form>
+                            <hr>
+                            <p id="res_forecast" hidden="true">hello</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
