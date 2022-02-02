@@ -7,7 +7,7 @@ const loc_input = document.getElementById('loc_input');
 sub_btn.addEventListener('click', (e) => {
     e.preventDefault();
     const location = document.getElementById('loc_input').value;
-    fetch(`http://localhost:3000/weather?address=${location}`).then ((res)=> {
+    fetch(`/weather?address=${location}`).then ((res)=> {
         res.json().then ((data=>{
             if (data.error) {
                 res_forecast.innerText = data.error;

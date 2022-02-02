@@ -19,6 +19,7 @@ const partialsdir = path.join(__dirname, "../templates/partials");  // partials 
 
 
 let app = express();
+const port = process.env.PORT || 3000;  // On heroku use env otherwise use 3000 for port
 
 // Setup handlebars engine and views and partials locations
 app.set('view engine', 'hbs'); // set up handlebars for express
