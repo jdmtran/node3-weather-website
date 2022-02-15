@@ -11,8 +11,6 @@ import request from 'request';
 
 export const forecast = (latitude, longitude, callback) => {
     let url = `http://api.weatherstack.com/current?access_key=0012c1b467eb5c43a9e7e9d769c744d6&query=${latitude},${longitude}&units=f`;
-
-    debugger;
     
     request({ url, json: true }, (error, response, body) => {
         if (error) {
